@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #6c56f2;
+  --backgroundLight: #f5f5f5;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #6c56f2;
+    --backgroundLight: #171717;
   }
 }
 
@@ -18,4 +22,58 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .size-screen {
+    @apply w-screen h-screen;
+  }
+
+  .size-full {
+    @apply w-full h-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .input-container {
+    @apply bg-backgroundLight rounded-common lg:p-4 p-3 text-foreground font-KelsonRegular lg:text-xl text-sm flex flex-row gap-3 items-center;
+  }
+
+  .input {
+    @apply w-full bg-transparent border-none focus:outline-none flex-1;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "KelsonBold";
+    src: url(/fonts/Kelson-Bold.otf);
+  }
+
+  @font-face {
+    font-family: "KelsonRegular";
+    src: url(/fonts/Kelson-Regular.otf);
+  }
+
+  @font-face {
+    font-family: "KelsonLight";
+    src: url(/fonts/Kelson-Light.otf);
+  }
+
+  @font-face {
+    font-family: "KelsonMedium";
+    src: url(/fonts/Kelson-Medium.otf);
+  }
+
+  @font-face {
+    font-family: "KelsonExtraBold";
+    src: url(/fonts/Kelson-ExtraBold.otf);
+  }
+
+  @font-face {
+    font-family: "KelsonExtraLight";
+    src: url(/fonts/Kelson-ExtraLight.otf);
+  }
 }
