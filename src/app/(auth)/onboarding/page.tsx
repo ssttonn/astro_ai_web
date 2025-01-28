@@ -67,7 +67,7 @@ const OnboardingPage = () => {
             } else {
               // Navigate to the next page
               console.log("Navigate to the next page");
-              router.push(Routes.register);
+              router.push(Routes.auth);
             }
           }}
         />

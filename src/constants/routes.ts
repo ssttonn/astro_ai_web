@@ -1,7 +1,6 @@
 const Routes = {
   onboarding: "/onboarding",
-  login: "/login",
-  register: "/register",
+  auth: "/auth",
 };
 
 export default Routes;
