@@ -36,8 +36,10 @@ const OnboardingSegment = ({
         />
       </div>
       <div className="shrink-0 lg:flex-1 flex-col lg:p-4 p-4 flex justify-start lg:justify-center items-center gap-4">
-        <h1 className="font-KelsonBold text-3xl text-center">{title}</h1>
-        <p className="text-lg font-KelsonRegular opacity-55 text-center">
+        <h1 className="font-KelsonBold text-3xl text-center text-foreground">
+          {title}
+        </h1>
+        <p className="text-lg font-KelsonRegular opacity-55 text-center text-foreground">
           {description}
         </p>
         <MainButton

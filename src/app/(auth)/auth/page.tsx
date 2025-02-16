@@ -32,7 +32,6 @@ const RegisterPage = () => {
   }, [switchAuthMode]);
 
   useGSAP(() => {
-    console.log("authMode", authMode);
     switch (authMode) {
       case AuthMode.login:
         return divRef.current?.scrollTo({
@@ -54,10 +53,10 @@ const RegisterPage = () => {
           ref={divRef}
           className="lg:flex-1 lg:items-center items-start flex lg:shrink-0 flex-row overflow-hidden"
         >
-          <div className="w-[100%] shrink-0 justify-center flex">
+          <div className="w-[100%] shrink-0 items-center lg:justify-center flex">
             <RegisterForm onSwitchLoginMode={onSwitchLoginMode} />
           </div>
-          <div className="w-[100%] shrink-0 justify-center flex">
+          <div className="w-[100%] shrink-0 items-center lg:justify-center flex">
             <LoginForm onSwitchRegisterMode={onSwitchRegisterMode} />
           </div>
         </div>

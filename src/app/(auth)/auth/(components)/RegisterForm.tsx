@@ -11,10 +11,10 @@ export interface RegisterFormProps {
 const RegisterForm = ({ onSwitchLoginMode }: RegisterFormProps) => {
   return (
     <div className="w-[85%] flex flex-col lg:gap-4 gap-3">
-      <h1 className="font-KelsonExtraBold text-3xl lg:text-5xl uppercase text-center">
+      <h1 className="font-KelsonExtraBold text-3xl lg:text-5xl uppercase text-center text-foreground">
         Register
       </h1>
-      <p className="font-KelsonRegular text-sm lg:text-lg opacity-55 text-center">
+      <p className="font-KelsonRegular text-sm lg:text-lg opacity-55 text-center text-foreground">
         Welcome to AstroAI - Let&apos;s get you started on your journey to the
         future.
       </p>
